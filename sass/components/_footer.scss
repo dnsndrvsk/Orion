@@ -1,0 +1,90 @@
+#footer {
+  padding: 40px 0;
+  background-color: #000;
+  
+  .container {
+    
+  }
+  
+  .value,
+  .affiliate,
+  .social {
+    float: left;
+    width: 18%;
+    
+    @media (max-width: $width-md) {
+      width: 33.33333%;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    
+    .header {
+      margin: 0;
+      margin-bottom: 10px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: $weight-bold;
+      color: lighten($grey-light, 30%);
+    }
+    
+    a {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: none;
+      font-weight: $weight-norm;
+      color: lighten($grey-light, 10%);
+    }
+  }
+  
+  .get-served {
+    float: right;
+    width: 35%;
+    
+    @media (max-width: $width-md) {
+      float: none;
+      display: block;
+      width: 400px;
+      margin: 0 auto;
+      clear: both;
+    }
+    
+    .header {
+      margin: 0;
+      margin-bottom: 10px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: $weight-bold;
+      color: lighten($grey-light, 30%);
+    }
+    
+    .serve-form {
+      position: relative;
+    }
+    
+    .email {
+      display: block;
+      width: 100%;
+      padding: 14px 30px;
+      font-size: 14px;
+      line-height: 14px;
+      color: $grey-light;
+      background-color: $grey;
+    }
+    
+    .btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 48px;
+      height: 100%;
+      color: $grey-light;
+      background-color: lighten($grey, 10%);
+    }
+  }
+}

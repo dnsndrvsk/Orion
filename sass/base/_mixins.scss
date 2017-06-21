@@ -1,0 +1,37 @@
+@mixin clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin black-overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+@mixin triange {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right: 10px solid lighten($grey-light, 20%)
+}
+
+@mixin circle {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: $radius-round;
+}
+

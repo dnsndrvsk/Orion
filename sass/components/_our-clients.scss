@@ -1,0 +1,31 @@
+#our-clients {
+  padding-top: 35px;
+  background-color: #111111;
+  
+  .items-list {
+    font-size: 0;
+  }
+  
+  .item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24%;
+    margin-bottom: 35px;
+    
+    @media (max-width: $width-lg) {
+      width: 31%;
+    }
+    
+    @media (max-width: $width-md) {
+      width: 49%;
+    }
+    
+    .nasa {
+      opacity: .4;
+    }
+    
+    .cnn {
+      opacity: .5;
+    }
+  }
+}
